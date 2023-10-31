@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "concurrently": "^8.2.2",
+    "vue-router": "^4.0.13"
+  },
+  "scripts": {
+    "start": "concurrently \"npm run backend\" \"npm run frontend\"",
+    "backend": "cd Src && npm start",
+    "frontend": "cd Public && npm run dev",
+    "install-all": "cd Src && npm install && cd ../Public && npm install"
+  }
+}
