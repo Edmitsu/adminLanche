@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2>Adicionar Combo</h2>
+    <h2>Adicionar Hamburguer</h2>
     <form @submit.prevent="addCombo">
       <div class="quntidade">
         <label for="quantity">ID:</label>
@@ -22,7 +22,7 @@
         <label for="image">Imagem:</label>
         <input type="file" id="image" @change="handleFileUpload">
       </div>
-      <button type="submit">Adicionar Combo</button>
+      <button type="submit">Adicionar Hamburguer</button>
     </form>
   </div>
 </template>
@@ -59,7 +59,7 @@ export default {
           console.log('Combo adicionado com sucesso:', response.data);
         })
         .catch(error => {
-          console.error('Erro ao adicionar o combo:', error);
+          console.error('Erro ao adicionar o Hamburguer:', error);
         });
     },
   },

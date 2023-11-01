@@ -1,6 +1,6 @@
    <template>
     <div>
-      <h1>Bebidas</h1>
+      <h1>Atualizar Bebidas</h1>
       <input v-model="search" placeholder="Pesquisa pelo Nome">
       <button @click="searchBebidas">Search</button>
       <ul v-if="showBebidas">

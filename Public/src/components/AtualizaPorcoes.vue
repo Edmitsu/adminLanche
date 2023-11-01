@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2>Editar Porção</h2>
+    <h2>Atualizar Porções</h2>
     <form @submit.prevent="updatePorcao">
       <div class="quntidade">
         <label for="quantity">Quantity:</label>

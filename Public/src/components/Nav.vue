@@ -6,7 +6,7 @@
       </div>
       <ul class="nav-links">
         <li><router-link to="/add-hamburguer">Adicionar hamburger</router-link></li>
-        <li><router-link to="/add-porcoes">Adicionar Poções</router-link></li>
+        <li><router-link to="/add-porcoes">Adicionar Porções</router-link></li>
         <li><router-link to="/add-bebidas">Adicionar Bebidas</router-link></li>
         <li><router-link to="/atualiza-hamburguer">Atualizar Hambúrguer</router-link></li>
         <li><router-link to="/atualiza-bebidas">Atualizar bebidas</router-link></li>
