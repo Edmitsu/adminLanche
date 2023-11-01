@@ -2,12 +2,15 @@
   <nav v-if="isUserLoggedIn">
     <div class="navbar">
       <div class="brand">
-        <router-link to="/">Adm Lanche on Net</router-link>
+        <router-link to="/home">Adm Lanche on Net</router-link>
       </div>
       <ul class="nav-links">
+        <li><router-link to="/add-hamburguer">Adicionar hamburger</router-link></li>
+        <li><router-link to="/add-porcoes">Adicionar Poções</router-link></li>
+        <li><router-link to="/add-bebidas">Adicionar Bebidas</router-link></li>
         <li><router-link to="/atualiza-hamburguer">Atualizar Hambúrguer</router-link></li>
-        <li><router-link to="/add-porcoes">Poções</router-link></li>
-        <li><router-link to="/add-bebidas">Bebidas</router-link></li>
+        <li><router-link to="/atualiza-bebidas">Atualizar bebidas</router-link></li>
+        <li><router-link to="/atualiza-porcoes">Atualizar porções</router-link></li>
         <li @click="logout">Logout</li>
       </ul>
     </div>
@@ -23,7 +26,6 @@ const isUserLoggedIn = ref(false);
 
 const router = useRouter();
 const route = useRoute();
-
 
 onBeforeMount(() => {
   isUserLoggedIn.value = !!localStorage.getItem("token");

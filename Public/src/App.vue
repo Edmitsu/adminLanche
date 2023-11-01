@@ -13,7 +13,7 @@
 <script setup>
 import Nav from "./components/Nav.vue";
 import AddBebida from './components/AddBebidas.vue';
-import AddHamburguer from './components/addHamburguer.vue'
+import AddHamburguer from './components/AddHamburguer.vue'
 import AddPorcoes from './components/AddPorcoes.vue'
 import AtualizaBebidas from './components/AtualizaBebidas.vue'
 import AtualizaHamburguer from './components/AtualizaHamburguer.vue'
