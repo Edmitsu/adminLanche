@@ -12,9 +12,15 @@
 
 <script setup>
 import Nav from "./components/Nav.vue";
-import AtualizaHamburguer from './components/AtualizaHamburguer.vue';
-import Porcaos from "./components/Porcaos.vue";
-import Bebidas from "./components/Bebidas.vue"
+import AddBebida from './components/AddBebidas.vue';
+import AddHamburguer from './components/addHamburguer.vue'
+import AddPorcoes from './components/AddPorcoes.vue'
+import AtualizaBebidas from './components/AtualizaBebidas.vue'
+import AtualizaHamburguer from './components/AtualizaHamburguer.vue'
+import AtualizaPorcoes from './components/AtualizaPorcoes.vue'
+import Cadastro from './components/Cadastro.vue'
+import Home from './components/Home.vue'
+import Login from './components/Login.vue'
 </script>
 
 <style scoped>

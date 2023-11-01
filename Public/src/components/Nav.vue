@@ -6,8 +6,8 @@
       </div>
       <ul class="nav-links">
         <li><router-link to="/atualiza-hamburguer">Atualizar Hambúrguer</router-link></li>
-        <li><router-link to="/porcaos">Poções</router-link></li>
-        <li><router-link to="/bebidas">Bebidas</router-link></li>
+        <li><router-link to="/add-porcoes">Poções</router-link></li>
+        <li><router-link to="/add-bebidas">Bebidas</router-link></li>
         <li @click="logout">Logout</li>
       </ul>
     </div>

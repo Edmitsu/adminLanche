@@ -1,14 +1,14 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import Home from './components/Home.vue';
-import Login from './components/Login.vue'; 
-import AtualizaHamburguer from './components/AtualizaHamburguer.vue';
-import AddHamburguer from './components/AddHamburguer.vue';
-import AddBebida from './components/AddBebidas.vue';
-import Porcaos from './components/Porcaos.vue';
-import Bebidas from './components/Bebidas.vue';
-import AddPorcaos from './components/AddPorcaos.vue';
-import cadastro from './components/Cadastro.vue';
-
+import AddBebidas from './components/AddBebidas.vue';
+import AddHamburguer from './components/addHamburguer.vue'
+import AddPorcoes from './components/AddPorcoes.vue'
+import AtualizaBebidas from './components/AtualizaBebidas.vue'
+import AtualizaHamburguer from './components/AtualizaHamburguer.vue'
+import AtualizaPorcoes from './components/AtualizaPorcoes.vue'
+import Cadastro from './components/Cadastro.vue'
+import Home from './components/Home.vue'
+import Login from './components/Login.vue'
+import Nav from './components/Nav.vue'
 
 
 const routes = [
@@ -28,13 +28,13 @@ const routes = [
     meta: { requiresAuth: false },
   },
   {
-    path: '/porcaos',
-    component: Porcaos,
+    path: '/atualiza-porcoes',
+    component: AtualizaPorcoes,
     meta: { requiresAuth: false },
   },
   {
-    path: '/bebidas',
-    component: Bebidas,
+    path: '/atualiza-bebidas',
+    component: AtualizaBebidas,
     meta: { requiresAuth: false },
   },
   {
@@ -44,17 +44,17 @@ const routes = [
   },
   {
     path: '/add-bebidas',
-    component: AddBebida,
+    component: AddBebidas,
     meta: { requiresAuth: false },
   },
   {
-    path: '/add-porcaos',
-    component: AddPorcaos,
+    path: '/add-porcoes',
+    component: AddPorcoes,
     meta: { requiresAuth: false },
   },
   {
     path: '/cadastro',
-    component: cadastro,
+    component: Cadastro,
     meta: { requiresAuth: false },
   },
 ];

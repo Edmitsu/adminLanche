@@ -36,7 +36,7 @@ export default {
       return `http://localhost:4000/${src}`;
     },
     fetchPorcoes() {
-      fetch("http://localhost:4000/porcao")
+      fetch("http://localhost:4000/porcaos")
         .then((response) => response.json())
         .then((data) => {
           this.porcoes = data.map(porcao => ({
