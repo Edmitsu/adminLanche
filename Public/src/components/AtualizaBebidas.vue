@@ -1,6 +1,6 @@
    <template>
     <div>
-      <h1>Atualizar Bebidas</h1>
+      <h2>Atualizar Bebidas</h2>
       <input v-model="search" placeholder="Pesquisa pelo Nome">
       <button @click="searchBebidas">Search</button>
       <ul v-if="showBebidas">
@@ -18,7 +18,7 @@
       </ul>
     </div>
     <router-link to="/add-bebidas">
-      <button class="my-button">Adicionar Bebidas</button>
+      <button class="my-button">Atualizar Bebidas</button>
     </router-link>
   </template>
   

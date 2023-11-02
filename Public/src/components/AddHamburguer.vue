@@ -19,7 +19,7 @@
         <input type="number" id="price" v-model="comboData.price" required>
       </div>
       <div>
-        <label for="image">Imagem:</label>
+        <label for="image">Imagem: </label>
         <input type="file" id="image" @change="handleFileUpload">
       </div>
       <button type="submit">Adicionar Hamburguer</button>

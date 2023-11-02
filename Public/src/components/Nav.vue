@@ -1,10 +1,8 @@
 <template>
   <nav v-if="isUserLoggedIn">
     <div class="navbar">
-      <div class="brand">
-        <router-link to="/home">Adm Lanche on Net</router-link>
-      </div>
       <ul class="nav-links">
+        <li><router-link to="/home">Adm LancheOnNet</router-link></li>
         <li><router-link to="/add-hamburguer">Adicionar hamburger</router-link></li>
         <li><router-link to="/add-porcoes">Adicionar Porções</router-link></li>
         <li><router-link to="/add-bebidas">Adicionar Bebidas</router-link></li>
@@ -73,12 +71,12 @@ nav {
   width: 100%; 
 }
 
-.navbar {
+/* .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-}
+} */
 
 .brand {
   font-size: 1.5rem;
@@ -91,6 +89,7 @@ nav {
   gap: 20px;
   padding: 0; /* Remova o espaçamento interno das <ul> */
   margin: 0; /* Remova a margem das <ul> */
+  align-items: center;
 }
 
 .nav-links li {
@@ -104,8 +103,8 @@ a {
   transition: color 0.3s;
 }
 
-a:hover {
-  text-decoration: underline;
-  color: #f00;
+a:hover, li:hover {
+  color: var(--main-red);
+  cursor: pointer;
 }
 </style>

@@ -85,6 +85,12 @@ body {
   font-weight: 400;
   line-height: 1.4;
   color: var(--main-gray);
+  background-color: var(--main-gray);
+}
+
+#app{
+  background-color: var(--main-gray);
+  height: 100%;
 }
 
 h1,
@@ -116,3 +122,9 @@ img {
   display: block;
   width: 100%;
 }
+
+label{
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+

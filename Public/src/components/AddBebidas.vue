@@ -2,7 +2,7 @@
   <div>
     <h2>Adicionar Bebida</h2>
     <form @submit.prevent="addBebida">
-      <div>
+      <div class="quantidade">
         <label for="quantity">Quantidade:</label>
         <input type="text" id="quantity" v-model="bebidaData.quantity" required>
       </div>
@@ -19,7 +19,7 @@
         <input type="number" id="price" v-model="bebidaData.price" required>
       </div>
       <div>
-        <label for="image">Imagem:</label>
+        <label for="image">Imagem: </label>
         <input type="file" id="image" @change="handleFileUpload">
       </div>
       <button type="submit">Adicionar Bebida</button>
@@ -67,8 +67,9 @@ export default {
 </script>
 <style>
 
-.quntidade{
+.quantidade{
   display: none;
 }
+
 
 </style>
