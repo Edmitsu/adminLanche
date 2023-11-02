@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container">
     
     <h1>Bem-vindo à página inicial</h1>
     <p>Este é o conteúdo da página inicial.</p>

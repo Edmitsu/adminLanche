@@ -1,8 +1,8 @@
 <template>
-  <div>
+  <div class="container">
     <h2>Atualizar Hamburguer</h2>
-    <input v-model="search" placeholder="Search by Name">
-    <button @click="searchHamburgers">Search</button>
+    <input class="search" v-model="search" placeholder="Pesquisa pelo Nome">
+    <button @click="searchHamburgers">Pesquisar</button>
     <ul v-if="showHamburgers">
       <li v-for="hamburger in hamburgers" :key="hamburger._id">
         <div v-if="hamburger.display">
@@ -16,10 +16,10 @@
         </div>
       </li>
     </ul>
+    <router-link to="/add-hamburguer">
+      <button class="my-button">Atualizar Hamburger</button>
+    </router-link>
   </div>
-  <router-link to="/add-hamburguer">
-    <button class="my-button">Atualizar Hamburger</button>
-  </router-link>
 </template>
 
 <script>
@@ -117,70 +117,5 @@ export default {
 </script>
 
 <style>
-.my-button {
-  background-color: #007bff;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-  text-decoration: none;
-}
-div {
-  text-align: center;
-  background-color: #f0f0f0;
-  padding: 20px;
-}
-h1 {
-  font-size: 24px;
-  color: #333;
-}
-input[type="text"] {
-  padding: 8px;
-  margin: 10px 0;
-}
-button {
-  background-color: #007bff;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-}
-ul {
-  list-style: none;
-  padding: 0;
-}
-li {
-  background-color: #fff;
-  padding: 10px;
-  margin: 10px 0;
-}
-img {
-  max-width: 100%;
-  height: auto;
-}
-input[type="text"],
-input[type="number"],
-textarea {
-  width: 100%;
-  padding: 8px;
-  margin: 5px 0;
-}
-button.update-button {
-  background-color: #28a745;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-}
-button.delete-button {
-  background-color: #dc3545;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-}
-input[type="file"] {
-  margin-top: 10px;
-}
 </style>
 

@@ -9,7 +9,7 @@
         <li><router-link to="/atualiza-hamburguer">Atualizar Hambúrguer</router-link></li>
         <li><router-link to="/atualiza-bebidas">Atualizar bebidas</router-link></li>
         <li><router-link to="/atualiza-porcoes">Atualizar porções</router-link></li>
-        <li @click="logout">Logout</li>
+        <li class="logout" @click="logout">Logout</li>
       </ul>
     </div>
   </nav>
@@ -63,32 +63,27 @@ const login = () => {
 </script>
 
 
-<style scoped>
+<style>
 nav {
-  background-color: #007bff;
-  color: #000000; 
+  display: flex;
+  justify-content: center;
+  background-color: var(--sec-gray);
   top: 0; 
-  width: 100%; 
+  width: 100vw; 
+  border-bottom: 0.5rem solid var(--main-gray);
 }
 
-/* .navbar {
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-} */
-
-.brand {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
+} 
 
 .nav-links {
   list-style: none;
   display: flex;
   gap: 20px;
-  padding: 0; /* Remova o espaçamento interno das <ul> */
-  margin: 0; /* Remova a margem das <ul> */
   align-items: center;
 }
 
@@ -98,13 +93,16 @@ nav {
 
 a {
   text-decoration: none;
-  color: #000000;
   cursor: pointer;
   transition: color 0.3s;
 }
 
 a:hover, li:hover {
-  color: var(--main-red);
+  color: var(--main-yellow);
   cursor: pointer;
+}
+
+.logout:hover{
+  color: var(--main-red);
 }
 </style>

@@ -1,16 +1,16 @@
 <template>
-  <div>
+  <div class="container">
     <h1>Login</h1>
     <form @submit.prevent="login">
-      <input v-model="email" type="email" placeholder="E-mail" required>
-      <input v-model="password" type="password" placeholder="Senha" required>
+      <input class="input-login" v-model="email" type="email" placeholder="E-mail" required>
+      <input class="input-login" v-model="password" type="password" placeholder="Senha" required>
       <button type="submit">Login</button>
     </form>
     <p v-if="errorMessage" class="error">{{ errorMessage }}</p>
+    <router-link to="/cadastro">
+      <button class="my-button">Cadastrar</button>
+    </router-link>
   </div>
-  <router-link to="/cadastro">
-    <button class="my-button">Cadastrar</button>
-  </router-link>
 </template>
 
 <script>

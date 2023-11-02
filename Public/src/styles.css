@@ -113,9 +113,13 @@ ul {
   list-style: none;
 }
 
-a {
+a, a:visited {
   text-decoration: none;
-  color: var(--main-turquoise);
+  color: var(--main-gray);
+}
+
+a:hover{
+  color: var(--main-yellow);
 }
 
 img {
@@ -128,3 +132,63 @@ label{
   font-weight: bold;
 }
 
+.container {
+  text-align: center;
+  background-color: #f0f0f0;
+  padding: 2rem;
+  margin: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Estilo para o campo de pesquisa */
+input[type="text"]{
+  padding: 8px;
+  margin: 10px 0;
+}
+
+/* Estilo para o botão de pesquisa */
+button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Estilo para campos de entrada de texto e número */
+input[type="text"],
+input[type="number"],
+textarea,
+.search,
+.input-login {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0;
+}
+
+/* Estilo para o botão "Atualizar Porção" */
+button.update-button {
+  background-color: #28a745;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Estilo para o botão "Excluir Porção" */
+button.delete-button {
+  background-color: #dc3545;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Estilo para o input de arquivo */
+input[type="file"] {
+  margin-top: 10px;
+  padding: 1.5rem;
+  cursor: pointer;
+}

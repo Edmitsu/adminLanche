@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container">
     <h2>Adicionar Porções</h2>
     <form @submit.prevent="updatePorcao">
       <div class="quantidade">

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container">
     <h2>Adicionar Hamburguer</h2>
     <form @submit.prevent="addCombo">
       <div class="quntidade">

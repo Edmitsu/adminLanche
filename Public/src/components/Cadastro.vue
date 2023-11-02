@@ -1,18 +1,18 @@
 <template>
-  <div>
+  <div class="container">
     <h1>Cadastro</h1>
     <form @submit.prevent="handleRegister">
-      <input v-model="name" type="text" placeholder="Nome" required>
-      <input v-model="email" type="email" placeholder="E-mail" required>
-      <input v-model="password" type="password" placeholder="Senha" required>
-      <input v-model="confirmPassword" type="password" placeholder="Confirmar Senha" required>
+      <input class="input-login" v-model="name" type="text" placeholder="Nome" required>
+      <input class="input-login" v-model="email" type="email" placeholder="E-mail" required>
+      <input class="input-login" v-model="password" type="password" placeholder="Senha" required>
+      <input class="input-login" v-model="confirmPassword" type="password" placeholder="Confirmar Senha" required>
       <button type="submit">Registrar</button>
     </form>
     <!-- <p v-if="errorMessage" class="error">{{ errorMessage }}</p> -->
+    <router-link to="/">
+        <button>Voltar para o Login</button>
+      </router-link>
   </div>
-  <router-link to="/">
-      <button>Voltar para o Login</button>
-    </router-link>
 </template>
 
 <script>

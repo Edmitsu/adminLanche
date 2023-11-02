@@ -1,8 +1,8 @@
 <template>
-  <div>
+  <div class="container">
     <h2>Atualizar Porções</h2>
-    <input v-model="search" placeholder="Pesquisa pelo Nome">
-    <button @click="searchPorcoes">Search</button>
+    <input class="search" v-model="search" placeholder="Pesquisa pelo Nome">
+    <button @click="searchPorcoes">Pesquisar</button>
     <ul v-if="showPorcoes">
       <li v-for="porcao in porcoes" :key="porcao._id">
         <div v-if="porcao.display">
@@ -16,10 +16,10 @@
         </div>
       </li>
     </ul>
+    <router-link to="/add-porcaos">
+      <button class="my-button">Atualizar Porção</button>
+    </router-link>
   </div>
-  <router-link to="/add-porcaos">
-    <button class="my-button">Atualizar Porção</button>
-  </router-link>
 </template>
 
 <script>
@@ -117,82 +117,5 @@ export default {
 </script>
 
 <style>
-  /* Estilo para o contêiner principal */
-  div {
-    text-align: center;
-    background-color: #f0f0f0;
-    padding: 20px;
-  }
-
-  /* Estilo para o título H1 */
-  h1 {
-    font-size: 24px;
-    color: #333;
-  }
-
-  /* Estilo para o campo de pesquisa */
-  input[type="text"] {
-    padding: 8px;
-    margin: 10px 0;
-  }
-
-  /* Estilo para o botão de pesquisa */
-  button {
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-  }
-
-  /* Estilo para a lista de porções */
-  ul {
-    list-style: none; /* Remove os marcadores de lista (pontos) */
-    padding: 0;
-  }
-
-  /* Estilo para cada item da lista (li) */
-  li {
-    background-color: #fff;
-    padding: 10px;
-    margin: 10px 0;
-  }
-
-  /* Estilo para a imagem da porção */
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-
-  /* Estilo para campos de entrada de texto e número */
-  input[type="text"],
-  input[type="number"],
-  textarea {
-    width: 100%;
-    padding: 8px;
-    margin: 5px 0;
-  }
-
-  /* Estilo para o botão "Atualizar Porção" */
-  button.update-button {
-    background-color: #28a745;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-  }
-
-  /* Estilo para o botão "Excluir Porção" */
-  button.delete-button {
-    background-color: #dc3545;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-  }
-
-  /* Estilo para o input de arquivo */
-  input[type="file"] {
-    margin-top: 10px;
-  }
+  
 </style>
